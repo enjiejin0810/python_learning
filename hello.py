@@ -1,2 +1,5 @@
-print("Hello world!")
-print("Python 3.14 is working")
+print("print hello world")
+print("today is a good day")
+
+name = "Enjie Jin"
+print (name)
