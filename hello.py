@@ -22,3 +22,22 @@ c = 3
 print (-b + (math.sqrt(b**2 - 4*a*c)) / (2 * a ))
 print (-b - (math.sqrt(b**2 - 4*a*c)) / (2 * a ))
 
+#计算BMI指数
+user_weight = float(input("请输入你的体重(kg): "))
+user_height = float(input("请输入你的身高(m) "))
+user_BMI = user_weight/user_height**2 
+print("您的BMI指数为: " + str(user_BMI))
+
+#偏瘦：user_BMI <= 18.5
+#正常: 18.5 < user_BMI <= 25
+#偏胖: 25 < user_BMI <= 30
+#肥胖 user_BMI > 30
+
+if user_BMI <= 18.5:
+    print("您的体质偏瘦")
+elif 18.5 < user_BMI <= 25:
+    print("您的体质正常")
+elif 25 < user_BMI <= 30:
+    print("您的体质偏胖")
+else:
+    print("您的体质肥胖")
