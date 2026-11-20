@@ -3,7 +3,7 @@ report = input("uploaded report?(yes/no): ")
 vip_level = int(input("input ur vip level(1/2/3): "))
 
 if 18 <= age <= 45:
-    print("u age is legal!")
+    print("ur age is legal!")
     if report == "yes":
         print("u can jpin the match!")
         if vip_level == 1:
